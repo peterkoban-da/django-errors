@@ -1,3 +1,15 @@
-from django.db import models
+"""
+Models for Bike App
+"""
 
-# Create your models here.
+from django.db.models import Model, CharField
+
+
+class Bike(Model):
+    """
+    Model for Bikes
+    """
+
+    name: CharField = CharField(max_length=250)
+    brand: CharField = CharField(max_length=250)
+    color: CharField = CharField(max_length=250)
